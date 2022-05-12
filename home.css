@@ -141,9 +141,7 @@ body{
     text-align: center;
     font-size: 40px;
     margin-top: 0px;
-    background: linear-gradient(to top left, rgb(151, 94, 174),rgb(90, 155, 221));
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    
   }
   .mesaj{
     font-family:cursive;
