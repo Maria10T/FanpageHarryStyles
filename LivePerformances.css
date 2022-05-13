@@ -1,7 +1,7 @@
 body{
-    background-color: #E7D8C3;
+    background-color:  #1E1C1D;
     margin:0 ;
-    font-style:' Bradley Hand' ;
+    font-style:cursive ;
     margin-bottom: 0;
 }
 
@@ -125,4 +125,101 @@ body{
   margin-bottom: 0ch;
 
   
+}
+
+.container{
+  width:80%;
+  margin:50px auto;
+  margin-top:10px;
+}
+
+.container h1{
+  color:#E7D8C3;
+  font-family: cursive;
+  font-size: 60px;
+  text-align:center;
+  margin-top:10px;
+}
+.row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.col{
+  flex-basis: 50%;
+  min-width: 250px;
+}
+
+.feature-img{
+  width: 83%;
+  margin: auto;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+
+}
+
+.small-img-row{
+  display: flex;
+  background: #E7D8C3;
+  margin: 20px 0;
+  align-items: center;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 85%;
+  height: 30%;
+}
+.small-img{
+  position:relative;
+  
+}
+
+.small-img img{
+  width: 150px;
+
+}
+
+.small-img-row p{
+  margin-left: 20px;
+  color:#1E1C1D;
+  line-height: 22px;
+  font-size:20px;
+  font-family: cursive;
+}
+
+.play-btn{
+  width:60px;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+  border-radius: 50%;
+
+}
+.small-img .play-btn{
+  width: 35px;
+}
+
+.video-player{
+  width:80%;
+  position: absolute;
+  left:50%;
+  top:60%;
+  transform: translate(-50%,-50%);
+  display:none;
+}
+video:focus{
+  outline:none;
+
+}
+
+.close-btn{
+  position: absolute;
+  top:10px;
+  right: inherit;
+  width: 30px;
+  cursor: pointer;
+  border-radius: 50%;
 }

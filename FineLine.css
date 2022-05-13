@@ -1,8 +1,10 @@
 body{
-    background-color: #E7D8C3;
-    margin:0 ;
-    font-style:' Bradley Hand' ;
-    margin-bottom: 0;
+  background-color: #BFBAAA;
+  margin:0 ;
+  font-family:cursive ;
+  margin-bottom: 0;
+  color: #1E1C1D;
+  font-size: 30px;
 }
 
 .img1 {
@@ -126,3 +128,47 @@ body{
 
   
 }
+
+.icon1{
+  margin: 0px;
+  border-radius: 50%;
+  padding:0;
+  width: 70px;
+  height: 70px;
+  line-height: 50px;
+  margin-left: 20px;
+  vertical-align: middle;
+  animation: rotation 8s infinite linear;
+}
+
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+ .box{
+  margin-top:15px;
+  margin-bottom: 5px;
+  padding: 10px;
+ }
+
+ .title{
+  font-family:cursive ;
+  font-size:90px;
+  text-align: center;
+  margin:10px;
+ }
+
+ .backimg{
+   float:right;
+   height:100%px;
+   width: 60%;
+   opacity: 0.5;
+
+ }
+ 
