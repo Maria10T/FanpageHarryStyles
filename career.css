@@ -128,19 +128,25 @@ body{
   
 }
 .float {
-    float: right;
-    width:30%;
-    height:30%;
-    border-radius: 8px;
-    box-shadow:#1E1C1D;
-  }
+  float: right;
+  width:15%;
+  height:15%;
+  border-radius: 8px;
+  margin:0;
+  padding:0;
+  box-shadow:#24191f;
+  opacity: 0.8;
   
-  .textbio{
-  font-size: 30px;
-  font-family: 'Times New Roman', Times, serif;
-  color: rgb(87, 120, 153);
-  margin-left: 10pt;
-  }
+}
+
+.textbio{
+font-size: 20px;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: black;
+margin-left: 10pt;
+margin-top:5px;
+margin-bottom: 5px;
+}
 
   .imgc{
     float: right;
@@ -148,5 +154,7 @@ body{
     height:20%;
     border-radius: 8px;
     box-shadow:#1E1C1D;
-
+    margin-left: 10pt;
+    margin-top:5px;
+    margin-bottom: 5px;
   }
