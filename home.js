@@ -26,3 +26,15 @@ var x = setInterval(function() {
     document.getElementById("countdown").innerHTML = "Enjoy!";
   }
 }, 1000);
+
+var photo=document.getElementById('photo');
+photo.addEventListener('mouseover',function(photo){
+  photo.target.src="home2.jpg"
+})
+photo.addEventListener('mouseout',function(photo){
+  photo.target.src="main.jpg"
+})
+
+photo.addEventListener('mouseover',function(photo){
+  photo.target.src="home2.jpg"
+})

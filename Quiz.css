@@ -6,10 +6,8 @@ body{
   width: 100%;
 }
 
-
-
 .footer {
-  position: fixed;
+  
   left: 0;
   bottom: 0;
   width: 100%;
@@ -144,7 +142,7 @@ margin-bottom: 0ch;
   width: 50%;
   border: 3px solid rgb(0, 0, 0);
   padding: 10px;
-  
+  visibility: hidden;
 }
 
 .quiz-header{
@@ -169,7 +167,7 @@ ul li label{
   cursor: pointer;
 }
 
-button{
+.sbutton{
   background-color: #1E1C1D;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
@@ -180,10 +178,48 @@ button{
   font-size:20px;
 }
 
-button:hover{
+.sbutton:hover{
   background-color: #b4a9da;
 }
-button:focus{
+.sbutton:focus{
   outline: none;
   background-color: #aa64f6;
+}
+.message{
+  font-size:30px;
+  color:#E7D8C3;
+  font-family:cursive;
+
+  text-align: center;
+}
+.box{
+  background-color: #E7D8C3;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px #E7D8C3;
+  width: 600px;
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top:20px;
+  width: 30%;
+  border: 3px solid rgb(0, 0, 0);
+  padding: 10px;
+  visibility: hidden;
+  text-align: center;
+  
+
+}
+
+#restart{
+
+  background-color: #1E1C1D;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 10px 10px;
+  color:#E7D8C3;
+  outline: none;
+  cursor: pointer;
+  font-size:20px;
+   margin:auto;
+  
 }

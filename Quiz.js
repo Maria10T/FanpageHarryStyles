@@ -146,3 +146,31 @@ submitBtn.addEventListener('click', () => {
        }
     }
 })
+
+const myTimeout = setTimeout(myTest, 5000);
+function myTest() {
+    document.getElementById("wait").remove()
+    const startTest = document.createElement("p");
+    startTest.innerText = "Good Luck!";
+    document.getElementById("startTest").appendChild(startTest)
+    document.getElementById("quiz").style.visibility="visible"
+    document.getElementById("box").style.visibility="visible"
+  }
+
+  const box=document.getElementById("box")
+  const restart = document.getElementById("restart")
+  box.addEventListener('mouseover',function(){
+      this.style.backgroundColor="red"
+  })
+  box.addEventListener('mouseout',function(){
+    this.style.backgroundColor="#E7D8C3"
+})
+  restart.addEventListener('mouseover',function(e){
+      e.stopPropagation();
+      restart.style.backgroundColor="#b4a9da"
+  })
+
+  restart.addEventListener('mouseout',function(e){
+    e.stopPropagation();
+    restart.style.backgroundColor= "#1E1C1D"
+})

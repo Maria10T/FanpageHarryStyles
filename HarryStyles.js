@@ -1,3 +1,6 @@
+
+
+
 var activeSong;
 //Plays the song. Just pass the id of the audio element.
 function play(id){

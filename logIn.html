@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" type="text/css" href="logIn.css">
 </head>
 <body>
   
@@ -41,13 +41,30 @@
     <button  class="gradient-button-1" onclick="window.location='Join.html'">Join</button>
   </div>
   
-
+  <div class="container">
+    <div class="left-col">
+      <h1>Welcome Back</h1>
+    </div>
+    <div class="right-col">
+      <div class="form-container">
+        <form action="#" method="post">
+          <div class="field-group">
+            <label for="Email">Email Address</label>
+            <input name='Email' id="Email" value="" type="email" placeholder="Email Address">
+            <p class="error-text">Looks like this is not email</p>              
+          </div>
+          <div class="field-group">
+            <label for="password">Password Address</label>
+            <input name='password' id="password" value="" type="password" placeholder="Password">
+            <p class="error-text">Password cannot be empty</p>              
+          </div>
+          <button type="submit">Log In </button>
+ 
+        </form>
+      </div>
   
-<img src="main.JPG" id="photo" class="img1">
-<br>
-<div class="mesaj">Coming soon...</div>
-<p id="countdown"></p>
-<img src="s3.jpg" class="centerimg">
+    </div>
+  </div>
 
 <div class = "footer">
      <div class = "center">
@@ -60,6 +77,6 @@
 
 <img src="rainbow.JPG" class="rainbow">
 </div>
-<script src="home.js"></script>
+<script src="logIn.js"></script>
 </body>
 </html>
