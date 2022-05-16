@@ -1,10 +1,24 @@
+
 body{
-    background-color:  #1E1C1D;
-    margin:0 ;
-    font-style:cursive ;
-    margin-bottom: 0;
+  background-color: #1E1C1D;
+  min-height:100vh; 
+  margin:0;
+   position:relative;
+
+}
+.footer {
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 50px;
+z-index: inherit;
 }
 
+body::after {
+content: '';
+display: block;
+height: 50px; 
+}
 .img1 {
     display: block;
     margin: 0;
@@ -89,7 +103,7 @@ body{
   }
 
 
-  .gradient-button-1 {
+  .gradient-button {
     padding: 20px 40px;
     font-size: 1.4rem;
     background-color: #1E1C1D;
@@ -103,7 +117,7 @@ body{
     
     
   }
-  .gradient-button-1:hover {
+  .gradient-button:hover {
     background-image: linear-gradient(to top left, rgb(151, 94, 174),rgb(90, 155, 221));
     color: white;
   }
@@ -131,6 +145,7 @@ body{
   width:80%;
   margin:50px auto;
   margin-top:10px;
+
 }
 
 .container h1{
@@ -142,8 +157,10 @@ body{
 }
 .row{
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+
 }
 
 .col{
@@ -196,7 +213,7 @@ body{
   transform: translate(-50%,-50%);
   cursor: pointer;
   border-radius: 50%;
-  border:3px solid black;
+  border:1px solid black;
 
 }
 .small-img .play-btn{
@@ -224,4 +241,21 @@ video:focus{
   cursor: pointer;
   border-radius: 50%;
   border:3px solid black;
+}
+
+@media only screen and (min-width: 1000px) {
+	
+	.row {
+		flex-direction: row;
+	}
+	
+}
+@media (max-width: 600px) {
+  .icon {
+   height: 20px;
+   width: 20px;
+  }
+  .container h1{
+    font-size: 40px;
+  }
 }

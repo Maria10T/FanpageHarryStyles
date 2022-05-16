@@ -1,15 +1,23 @@
-body{
-    background-color:  #1E1C1D;
-    margin:0 ;
-    font-style:cursive ;
-    margin-bottom: 0;
+
+  body{
+    background-color: #1E1C1D;
+    min-height:100vh; 
+    margin:0;
+     position:relative;
+  
   }
   .footer {
-  position: fixed;
-  left: 0;
+  position: absolute;
   bottom: 0;
   width: 100%;
-  text-align: center;
+  height: 50px;
+  z-index: inherit;
+  }
+  
+  body::after {
+  content: '';
+  display: block;
+  height: 50px; 
   }
   .img1 {
     display: block;
@@ -95,7 +103,7 @@ body{
   }
   
   
-  .gradient-button-1 {
+  .gradient-button {
     padding: 20px 40px;
     font-size: 1.4rem;
     background-color: #1E1C1D;
@@ -109,7 +117,7 @@ body{
     
     
   }
-  .gradient-button-1:hover {
+  .gradient-button:hover {
     background-image: linear-gradient(to top left, rgb(151, 94, 174),rgb(90, 155, 221));
     color: white;
   }
@@ -162,7 +170,7 @@ body{
     background: #d4edda;
   }
   .message-form h3 {
-    color: hsl(205, 86%, 17%);
+    color: black;
     margin-bottom: 1.5rem;
     text-align: center;
   }
@@ -179,14 +187,14 @@ body{
     border-color: transparent;
     font-size: 1rem;
     flex: 1 0 auto;
-    color:  hsl(210, 22%, 49%);
+    color:  hsl(209, 31%, 42%);
   }
   #message::placeholder {
     font-family:'Times New Roman', Times, serif;
     color: hsl(210, 22%, 49%);
   }
   .submit-btn {
-    background:  hsl(210, 31%, 80%);
+    background:  #776e95;
     border-color: transparent;
     flex: 0 0 5rem;
     display: grid;
@@ -197,12 +205,12 @@ body{
     border-top-right-radius:  0.5rem;
     border-bottom-right-radius:  0.5rem;
     cursor: pointer;
-    content:  #49a6e9;
+    content:  #bfb0f2;
     transition: all 0.3s linear;
     font-size: 0.85rem;
   }
   .submit-btn:hover {
-    background: #49a6e9;
+    background: #bfb0f2;
     color: #fff;
   }
   
@@ -226,10 +234,10 @@ body{
   }
   .message-item:hover {
     color: hsl(210, 22%, 49%);
-    background:hsl(210, 36%, 96%);
+    background:#bfb0f2;
   }
   .message-item:hover .title {
-    color: hsl(210, 22%, 49%);
+    color:#0a0a0b;
   }
   .title {
     margin-bottom: 0;

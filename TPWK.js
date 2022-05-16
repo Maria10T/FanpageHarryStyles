@@ -13,7 +13,7 @@ let editFlag = false;
 let editID = "";
 
 message.addEventListener('keydown',e =>{
-    message.style.backgroundColor = "#49a6e9";
+    message.style.backgroundColor = "#bfb0f2";
     message.style.color = "black";
 })
 
