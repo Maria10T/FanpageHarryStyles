@@ -1,0 +1,11 @@
+<%-include('header')-%>
+
+
+    <div class="box">
+        <h3>Welcome back!</h3>
+        <h5><%= locals.user ? user : "User" %></h5>
+        <a href="/route/logout">Logout</a>
+    </div>
+
+
+<%-include('footer')-%>
