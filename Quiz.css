@@ -1,23 +1,23 @@
-
-body{
+body {
   background-color: #1E1C1D;
-  min-height:100vh; 
-  margin:0;
-   position:relative;
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
 
 }
+
 .footer {
-position: absolute;
-bottom: 0;
-width: 100%;
-height: 50px;
-z-index: inherit;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  z-index: inherit;
 }
 
 body::after {
-content: '';
-display: block;
-height: 50px; 
+  content: '';
+  display: block;
+  height: 50px;
 }
 
 
@@ -25,17 +25,17 @@ height: 50px;
   display: block;
   margin: 0;
   padding: 0;
-  border: 0; 
+  border: 0;
   width: 100%;
   height: 20%;
-  top:0;
+  top: 0;
 }
 
 .rainbow {
   display: inline-block;
   bottom: 0;
   padding: 0;
-  border: 0; 
+  border: 0;
   width: 100%;
   height: 30pt;
   margin-bottom: 0;
@@ -46,8 +46,8 @@ height: 50px;
   background-color: #1E1C1D;
   font-family: cursive;
   font-size: 25px;
- 
- 
+
+
 }
 
 .navbar a {
@@ -64,7 +64,7 @@ height: 50px;
 }
 
 .dropdown .dropbtn {
-  font-size: 25px;  
+  font-size: 25px;
   border: none;
   outline: none;
   color: #E7D8C3;
@@ -74,8 +74,9 @@ height: 50px;
   margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-image: linear-gradient(to top left, rgb(151, 94, 174),rgb(90, 155, 221));
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-image: linear-gradient(to top left, rgb(151, 94, 174), rgb(90, 155, 221));
 }
 
 .dropdown-content {
@@ -83,7 +84,7 @@ height: 50px;
   position: absolute;
   background-color: #1E1C1D;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -109,38 +110,40 @@ height: 50px;
   padding: 20px 40px;
   font-size: 1.4rem;
   background-color: #1E1C1D;
-  border:0;
+  border: 0;
   margin-right: 0;
   color: #E7D8C3;
   outline: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  float:right;
-  
-  
+  float: right;
+
+
 }
+
 .gradient-button:hover {
-  background-image: linear-gradient(to top left, rgb(151, 94, 174),rgb(90, 155, 221));
+  background-image: linear-gradient(to top left, rgb(151, 94, 174), rgb(90, 155, 221));
   color: white;
 }
 
 
-.icon{
-margin: 20px;
-border-radius: 50%;
-width: 50px;
-height: 50px;
-line-height: 50px;
-text-align: center;
+.icon {
+  margin: 20px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
 }
 
 .center {
-text-align: center;
-display: block ;
-padding: 1em;
-margin-bottom: 0ch;
+  text-align: center;
+  display: block;
+  padding: 1em;
+  margin-bottom: 0ch;
 }
-.quiz-container{
+
+.quiz-container {
   background-color: #E7D8C3;
   border-radius: 10px;
   box-shadow: 0 0 10px 2px #E7D8C3;
@@ -153,54 +156,59 @@ margin-bottom: 0ch;
   visibility: hidden;
 }
 
-.quiz-header{
+.quiz-header {
   padding: 4rem;
 }
 
-h2{
+h2 {
   padding: 1rem;
   text-align: center;
   margin: 0;
 }
 
-ul{
+ul {
   list-style-type: none;
   padding: 0;
 }
-ul li{
+
+ul li {
   font-size: 1.2rem;
   margin: 1rem 0;
 }
-ul li label{
+
+ul li label {
   cursor: pointer;
 }
 
-.sbutton{
+.sbutton {
   background-color: #1E1C1D;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
   padding: 10px 10px;
-  color:#E7D8C3;
+  color: #E7D8C3;
   outline: none;
   cursor: pointer;
-  font-size:20px;
+  font-size: 20px;
 }
 
-.sbutton:hover{
+.sbutton:hover {
   background-color: #b4a9da;
 }
-.sbutton:focus{
+
+.sbutton:focus {
   outline: none;
   background-color: #aa64f6;
 }
-.message{
-  font-size:30px;
-  color:#E7D8C3;
-  font-family:cursive;
+
+.message {
+  font-size: 30px;
+  color: #E7D8C3;
+  font-family: cursive;
 
   text-align: center;
 }
-.box{
+
+.box {
   background-color: #E7D8C3;
   border-radius: 10px;
   box-shadow: 0 0 10px 2px #E7D8C3;
@@ -208,34 +216,53 @@ ul li label{
   overflow: hidden;
   margin-right: auto;
   margin-left: auto;
-  margin-top:20px;
+  margin-top: 20px;
   width: 30%;
   border: 3px solid rgb(0, 0, 0);
   padding: 10px;
   visibility: hidden;
   text-align: center;
-  
+
 
 }
 
-#restart{
+#restart {
 
   background-color: #1E1C1D;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid rgb(27, 26, 26);
   border-radius: 5px;
   padding: 10px 10px;
-  color:#E7D8C3;
+  color: #E7D8C3;
   outline: none;
   cursor: pointer;
-  font-size:20px;
-   margin:auto;
-  
+  font-size: 20px;
+  margin: auto;
+
 }
 
 @media (max-width: 600px) {
   .icon {
-   height: 20px;
-   width: 20px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 10px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+  }
+
+  .gradient-button {
+    font-size: 0.5rem;
+    padding: 10px 15px;
+  }
+
+  .rainbow {
+    height: 15pt;
   }
 
 }

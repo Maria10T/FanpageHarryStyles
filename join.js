@@ -5,7 +5,7 @@ console.log(inputs);
 form.addEventListener('submit', (e) => {
 	e.preventDefault();
 	inputs.forEach((input) => {
-		
+
 		if (!input.value) {
 			input.parentElement.classList.add('error');
 		} else {
@@ -21,7 +21,7 @@ form.addEventListener('submit', (e) => {
 	});
 });
 
-function validateEmail (email) {
+function validateEmail(email) {
 	var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	return re.test(String(email).toLowerCase());
 }

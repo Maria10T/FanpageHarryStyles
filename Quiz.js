@@ -83,7 +83,7 @@ const quizData = [
 
 ];
 
-const quiz= document.getElementById('quiz')
+const quiz = document.getElementById('quiz')
 const answerEls = document.querySelectorAll('.answer')
 const questionEl = document.getElementById('question')
 const a_text = document.getElementById('a_text')
@@ -118,7 +118,7 @@ function deselectAnswers() {
 function getSelected() {
     let answer
     answerEls.forEach(answerEl => {
-        if(answerEl.checked) {
+        if (answerEl.checked) {
             answer = answerEl.id
         }
     })
@@ -128,22 +128,22 @@ function getSelected() {
 
 submitBtn.addEventListener('click', () => {
     const answer = getSelected()
-    if(answer) {
-       if(answer === quizData[currentQuiz].correct) {
-           score++
-       }
+    if (answer) {
+        if (answer === quizData[currentQuiz].correct) {
+            score++
+        }
 
-       currentQuiz++
+        currentQuiz++
 
-       if(currentQuiz < quizData.length) {
-           loadQuiz()
-       } else {
-           quiz.innerHTML = `
+        if (currentQuiz < quizData.length) {
+            loadQuiz()
+        } else {
+            quiz.innerHTML = `
            <h2>You answered ${score}/${quizData.length} questions correctly</h2>
 
            <button onclick="location.reload()">Reload</button>
            `
-       }
+        }
     }
 })
 
@@ -153,24 +153,24 @@ function myTest() {
     const startTest = document.createElement("p");
     startTest.innerText = "Good Luck!";
     document.getElementById("startTest").appendChild(startTest)
-    document.getElementById("quiz").style.visibility="visible"
-    document.getElementById("box").style.visibility="visible"
-  }
+    document.getElementById("quiz").style.visibility = "visible"
+    document.getElementById("box").style.visibility = "visible"
+}
 
-  const box=document.getElementById("box")
-  const restart = document.getElementById("restart")
-  box.addEventListener('mouseover',function(){
-      this.style.backgroundColor="red"
-  })
-  box.addEventListener('mouseout',function(){
-    this.style.backgroundColor="#E7D8C3"
+const box = document.getElementById("box")
+const restart = document.getElementById("restart")
+box.addEventListener('mouseover', function () {
+    this.style.backgroundColor = "#f27979"
 })
-  restart.addEventListener('mouseover',function(e){
-      e.stopPropagation();
-      restart.style.backgroundColor="#b4a9da"
-  })
-
-  restart.addEventListener('mouseout',function(e){
+box.addEventListener('mouseout', function () {
+    this.style.backgroundColor = " #E7D8C3"
+})
+restart.addEventListener('mouseover', function (e) {
     e.stopPropagation();
-    restart.style.backgroundColor= "#1E1C1D"
+    restart.style.backgroundColor = " #f27979"
+})
+
+restart.addEventListener('mouseout', function (e) {
+    e.stopPropagation();
+    restart.style.backgroundColor = "black"
 })

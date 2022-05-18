@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="HarrysHouse.js"></script>
-    <link rel="stylesheet" type="text/css" href="HarrysHouse.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="HarrysHouse.js"></script>
+  <link rel="stylesheet" type="text/css" href="HarrysHouse.css">
 </head>
+
 <body>
-  
+
   <div class="navbar">
 
     <a href="home.html">Home</a>
@@ -20,7 +22,7 @@
         <a href="Career.html">Career</a>
         <a href="FunFacts.html">Fun Facts</a>
       </div>
-    </div> 
+    </div>
 
     <a href="Quiz.html">Quiz</a>
 
@@ -34,223 +36,250 @@
         <a href="HarrysHouse.html">Harry's House </a>
         <a href="LivePerformances.html">Live Performances </a>
       </div>
-    </div> 
+    </div>
     <a href="TPWK.html">TPWK</a>
-    <button  class="gradient-button" onclick="window.location='logIn.html'">Log In</button>
-    <button  class="gradient-button" onclick="window.location='Join.html'">Join</button>
+    <button class="gradient-button" onclick="window.location='logIn.html'">Log In</button>
+    <button class="gradient-button" onclick="window.location='Join.html'">Join</button>
   </div>
- <div class="title">Harry's House</div>
+  <div class="title">Harry's House</div>
   <p>
-    <div class="box">
+  <div class="box">
     <img src="coverhh.JPG" class="icon1">
     Music For a Sushi Restaurant
   </div>
   <img src="backhh.jpg" class="backimg">
-    <div hidden>
-    
-    <audio id="song" width="300" height="32" ontimeupdate="updateTime()" controls="controls"><source src="hs1.mp3" type="audio/mp3" /></audio>
+  <div hidden>
+
+    <audio id="song" width="300" height="32" ontimeupdate="updateTime()" controls="controls">
+      <source src="hs1.mp3" type="audio/mp3" />
+    </audio>
     <div id="songPlay" onclick="play('song')"></div>
     <div id="songPause" onclick="pause()"></div>
     <div id="songPlayPause" onclick="playPause('song')"></div>
     <div id="songStop" onclick="stopSong()"></div>
     <div id="volumeMeter" onclick="setNewVolume(this,event)"></div>
-   <div id="songSlider" onclick="setSongPosition(this,event)"></div>
+    <div id="songSlider" onclick="setSongPosition(this,event)"></div>
   </div>
   </p>
-    <p>
-      <div class="box">
-    <img src="coverhh.JPG" class="icon1">  
+  <p>
+  <div class="box">
+    <img src="coverhh.JPG" class="icon1">
     Late Night Talking
-    </div>
-    <div hidden>
-      <audio id="song" width="300" height="32" ontimeupdate="updateTime()" controls="controls"><source src="hs2.mp3" type="audio/mp3" /></audio>
-    <div id="songPlay" onclick="play('song')"></div>
-    <div id="songPause" onclick="pause()"></div>
-    <div id="songPlayPause" onclick="playPause('song')"></div>
-    <div id="songStop" onclick="stopSong()"></div>
-    <div id="volumeMeter" onclick="setNewVolume(this,event)"></div>
-   <div id="songSlider" onclick="setSongPosition(this,event)"></div>
   </div>
-    </p>
-    <p>
-      <div class="box">
-      <img src="coverhh.JPG" class="icon1">
-      Grapejuice
-    </div>
-    <div hidden>
-      <audio id="song" width="300" height="32" ontimeupdate="updateTime()" controls="controls"><source src="hs3.mp3" type="audio/mp3" /></audio>
+  <div hidden>
+    <audio id="song" width="300" height="32" ontimeupdate="updateTime()" controls="controls">
+      <source src="hs2.mp3" type="audio/mp3" />
+    </audio>
     <div id="songPlay" onclick="play('song')"></div>
     <div id="songPause" onclick="pause()"></div>
     <div id="songPlayPause" onclick="playPause('song')"></div>
     <div id="songStop" onclick="stopSong()"></div>
     <div id="volumeMeter" onclick="setNewVolume(this,event)"></div>
-   <div id="songSlider" onclick="setSongPosition(this,event)"></div>
+    <div id="songSlider" onclick="setSongPosition(this,event)"></div>
   </div>
-    </p>
-    <p>
-      <div class="box">
-      <img src="coverhh4.JPG" class="icon1">
-      As It Was
-    </div>
-      <audio id="song" width="300" height="32" ontimeupdate="updateTime()" controls="controls"><source src="asitwas (online-audio-converter.com).mp3" type="audio/mp3" /></audio>
-    <div id="songPlay" onclick="play('song')"></div>
-    <div id="songPause" onclick="pause()"></div>
-    <div id="songPlayPause" onclick="playPause('song')"></div>
-    <div id="songStop" onclick="stopSong()"></div>
-    <div id="volumeMeter" onclick="setNewVolume(this,event)"></div>
-   <div id="songSlider" onclick="setSongPosition(this,event)"></div>
-  
-    </p>
-    <p>
-      <div class="box">
-      <img src="coverhh.JPG" class="icon1">
-      Daylight
-    </div>
-    <div hidden>
-      <audio id="song" width="300" height="32" ontimeupdate="updateTime()" controls="controls"><source src="hs5.mp3" type="audio/mp3" /></audio>
-    <div id="songPlay" onclick="play('song')"></div>
-    <div id="songPause" onclick="pause()"></div>
-    <div id="songPlayPause" onclick="playPause('song')"></div>
-    <div id="songStop" onclick="stopSong()"></div>
-    <div id="volumeMeter" onclick="setNewVolume(this,event)"></div>
-   <div id="songSlider" onclick="setSongPosition(this,event)"></div>
+  </p>
+  <p>
+  <div class="box">
+    <img src="coverhh.JPG" class="icon1">
+    Grapejuice
   </div>
-    </p>
-    <p>
-      <div class="box">
-      <img src="coverhh.JPG" class="icon1">
-      Little Freak
-    </div>
-    <div hidden>
-      <audio id="song" width="300" height="32" ontimeupdate="updateTime()" controls="controls"><source src="hs6.mp3" type="audio/mp3" /></audio>
+  <div hidden>
+    <audio id="song" width="300" height="32" ontimeupdate="updateTime()" controls="controls">
+      <source src="hs3.mp3" type="audio/mp3" />
+    </audio>
     <div id="songPlay" onclick="play('song')"></div>
     <div id="songPause" onclick="pause()"></div>
     <div id="songPlayPause" onclick="playPause('song')"></div>
     <div id="songStop" onclick="stopSong()"></div>
     <div id="volumeMeter" onclick="setNewVolume(this,event)"></div>
-   <div id="songSlider" onclick="setSongPosition(this,event)"></div>
+    <div id="songSlider" onclick="setSongPosition(this,event)"></div>
   </div>
-    </p>
-    <p>
-      <div class="box">
-      <img src="coverhh.JPG" class="icon1">
-      Matilda
-    </div>
-    <div hidden>
-      <audio id="song" width="300" height="32" ontimeupdate="updateTime()" controls="controls"><source src="hs7.mp3" type="audio/mp3" /></audio>
-    <div id="songPlay" onclick="play('song')"></div>
-    <div id="songPause" onclick="pause()"></div>
-    <div id="songPlayPause" onclick="playPause('song')"></div>
-    <div id="songStop" onclick="stopSong()"></div>
-    <div id="volumeMeter" onclick="setNewVolume(this,event)"></div>
-   <div id="songSlider" onclick="setSongPosition(this,event)"></div>
+  </p>
+  <p>
+  <div class="box">
+    <img src="coverhh4.JPG" class="icon1">
+    As It Was
   </div>
-    </p>
-    <p>
-      <div class="box">
-      <img src="coverhh.JPG" class="icon1">
-      Cinema
-    </div>
-    <div hidden>
-      <audio id="song" width="300" height="32" ontimeupdate="updateTime()" controls="controls"><source src="hs8.mp3" type="audio/mp3" /></audio>
-    <div id="songPlay" onclick="play('song')"></div>
-    <div id="songPause" onclick="pause()"></div>
-    <div id="songPlayPause" onclick="playPause('song')"></div>
-    <div id="songStop" onclick="stopSong()"></div>
-    <div id="volumeMeter" onclick="setNewVolume(this,event)"></div>
-   <div id="songSlider" onclick="setSongPosition(this,event)"></div>
-  </div>
-    </p>
-    <p>
-      <div class="box">
-      <img src="coverhh.JPG" class="icon1">
-      Daydreaming
-    </div>
-    <div hidden>
-      <audio id="song" width="300" height="32" ontimeupdate="updateTime()" controls="controls"><source src="hs9.mp3" type="audio/mp3" /></audio>
-    <div id="songPlay" onclick="play('song')"></div>
-    <div id="songPause" onclick="pause()"></div>
-    <div id="songPlayPause" onclick="playPause('song')"></div>
-    <div id="songStop" onclick="stopSong()"></div>
-    <div id="volumeMeter" onclick="setNewVolume(this,event)"></div>
-   <div id="songSlider" onclick="setSongPosition(this,event)"></div>
-  </div>
-    </p>
-    <p>
-      <div class="box">
-      <img src="coverhh.JPG" class="icon1">
-      Keep Driving
-    </div>
-    <div hidden>
-      <audio id="song" width="300" height="32" ontimeupdate="updateTime()" controls="controls"><source src="hs10.mp3" type="audio/mp3" /></audio>
-    <div id="songPlay" onclick="play('song')"></div>
-    <div id="songPause" onclick="pause()"></div>
-    <div id="songPlayPause" onclick="playPause('song')"></div>
-    <div id="songStop" onclick="stopSong()"></div>
-    <div id="volumeMeter" onclick="setNewVolume(this,event)"></div>
-   <div id="songSlider" onclick="setSongPosition(this,event)"></div>
-  </div>
-    </p>
+  <audio id="song" width="300" height="32" ontimeupdate="updateTime()" controls="controls">
+    <source src="asitwas (online-audio-converter.com).mp3" type="audio/mp3" />
+  </audio>
+  <div id="songPlay" onclick="play('song')"></div>
+  <div id="songPause" onclick="pause()"></div>
+  <div id="songPlayPause" onclick="playPause('song')"></div>
+  <div id="songStop" onclick="stopSong()"></div>
+  <div id="volumeMeter" onclick="setNewVolume(this,event)"></div>
+  <div id="songSlider" onclick="setSongPosition(this,event)"></div>
 
-    <p>
-      <div class="box">
-      <img src="coverhh.JPG" class="icon1">
-      Satellite
-    </div>
-    <div hidden>
-      <audio id="song" width="300" height="32" ontimeupdate="updateTime()" controls="controls"><source src="hs10.mp3" type="audio/mp3" /></audio>
+  </p>
+  <p>
+  <div class="box">
+    <img src="coverhh.JPG" class="icon1">
+    Daylight
+  </div>
+  <div hidden>
+    <audio id="song" width="300" height="32" ontimeupdate="updateTime()" controls="controls">
+      <source src="hs5.mp3" type="audio/mp3" />
+    </audio>
     <div id="songPlay" onclick="play('song')"></div>
     <div id="songPause" onclick="pause()"></div>
     <div id="songPlayPause" onclick="playPause('song')"></div>
     <div id="songStop" onclick="stopSong()"></div>
     <div id="volumeMeter" onclick="setNewVolume(this,event)"></div>
-   <div id="songSlider" onclick="setSongPosition(this,event)"></div>
+    <div id="songSlider" onclick="setSongPosition(this,event)"></div>
   </div>
-    </p>
-
-    <p>
-      <div class="box">
-      <img src="coverhh.JPG" class="icon1">
-      Boyfriends
-    </div>
-    <div hidden>
-      <audio id="song" width="300" height="32" ontimeupdate="updateTime()" controls="controls"><source src="hs10.mp3" type="audio/mp3" /></audio>
+  </p>
+  <p>
+  <div class="box">
+    <img src="coverhh.JPG" class="icon1">
+    Little Freak
+  </div>
+  <div hidden>
+    <audio id="song" width="300" height="32" ontimeupdate="updateTime()" controls="controls">
+      <source src="hs6.mp3" type="audio/mp3" />
+    </audio>
     <div id="songPlay" onclick="play('song')"></div>
     <div id="songPause" onclick="pause()"></div>
     <div id="songPlayPause" onclick="playPause('song')"></div>
     <div id="songStop" onclick="stopSong()"></div>
     <div id="volumeMeter" onclick="setNewVolume(this,event)"></div>
-   <div id="songSlider" onclick="setSongPosition(this,event)"></div>
+    <div id="songSlider" onclick="setSongPosition(this,event)"></div>
   </div>
-    </p>
-
-    <p>
-      <div class="box">
-      <img src="coverhh.JPG" class="icon1">
-      Love Of My Life
-    </div>
-    <div hidden>
-      <audio id="song" width="300" height="32" ontimeupdate="updateTime()" controls="controls"><source src="hs10.mp3" type="audio/mp3" /></audio>
+  </p>
+  <p>
+  <div class="box">
+    <img src="coverhh.JPG" class="icon1">
+    Matilda
+  </div>
+  <div hidden>
+    <audio id="song" width="300" height="32" ontimeupdate="updateTime()" controls="controls">
+      <source src="hs7.mp3" type="audio/mp3" />
+    </audio>
     <div id="songPlay" onclick="play('song')"></div>
     <div id="songPause" onclick="pause()"></div>
     <div id="songPlayPause" onclick="playPause('song')"></div>
     <div id="songStop" onclick="stopSong()"></div>
     <div id="volumeMeter" onclick="setNewVolume(this,event)"></div>
-   <div id="songSlider" onclick="setSongPosition(this,event)"></div>
+    <div id="songSlider" onclick="setSongPosition(this,event)"></div>
   </div>
-    </p>
+  </p>
+  <p>
+  <div class="box">
+    <img src="coverhh.JPG" class="icon1">
+    Cinema
+  </div>
+  <div hidden>
+    <audio id="song" width="300" height="32" ontimeupdate="updateTime()" controls="controls">
+      <source src="hs8.mp3" type="audio/mp3" />
+    </audio>
+    <div id="songPlay" onclick="play('song')"></div>
+    <div id="songPause" onclick="pause()"></div>
+    <div id="songPlayPause" onclick="playPause('song')"></div>
+    <div id="songStop" onclick="stopSong()"></div>
+    <div id="volumeMeter" onclick="setNewVolume(this,event)"></div>
+    <div id="songSlider" onclick="setSongPosition(this,event)"></div>
+  </div>
+  </p>
+  <p>
+  <div class="box">
+    <img src="coverhh.JPG" class="icon1">
+    Daydreaming
+  </div>
+  <div hidden>
+    <audio id="song" width="300" height="32" ontimeupdate="updateTime()" controls="controls">
+      <source src="hs9.mp3" type="audio/mp3" />
+    </audio>
+    <div id="songPlay" onclick="play('song')"></div>
+    <div id="songPause" onclick="pause()"></div>
+    <div id="songPlayPause" onclick="playPause('song')"></div>
+    <div id="songStop" onclick="stopSong()"></div>
+    <div id="volumeMeter" onclick="setNewVolume(this,event)"></div>
+    <div id="songSlider" onclick="setSongPosition(this,event)"></div>
+  </div>
+  </p>
+  <p>
+  <div class="box">
+    <img src="coverhh.JPG" class="icon1">
+    Keep Driving
+  </div>
+  <div hidden>
+    <audio id="song" width="300" height="32" ontimeupdate="updateTime()" controls="controls">
+      <source src="hs10.mp3" type="audio/mp3" />
+    </audio>
+    <div id="songPlay" onclick="play('song')"></div>
+    <div id="songPause" onclick="pause()"></div>
+    <div id="songPlayPause" onclick="playPause('song')"></div>
+    <div id="songStop" onclick="stopSong()"></div>
+    <div id="volumeMeter" onclick="setNewVolume(this,event)"></div>
+    <div id="songSlider" onclick="setSongPosition(this,event)"></div>
+  </div>
+  </p>
 
-  
-    <footer class="footer">
-      <div class="center">
-        <a href="https://twitter.com/harry_styles"><img src="twitter.png" class="icon"></a>
-        <a href="https://ro-ro.facebook.com/harrystyles"><img src="facebook.png" class="icon"></a>
-        <a href="https://www.instagram.com/harrystyles/"><img src="instagram.png" class="icon"></a>
-        <a href="https://www.youtube.com/channel/UCZFWPqqPkFlNwIxcpsLOwew"><img src="youtube.png" class="icon"></a>
-      </div>
-      <img src="rainbow.JPG" class="rainbow">
-    </footer>
+  <p>
+  <div class="box">
+    <img src="coverhh.JPG" class="icon1">
+    Satellite
+  </div>
+  <div hidden>
+    <audio id="song" width="300" height="32" ontimeupdate="updateTime()" controls="controls">
+      <source src="hs10.mp3" type="audio/mp3" />
+    </audio>
+    <div id="songPlay" onclick="play('song')"></div>
+    <div id="songPause" onclick="pause()"></div>
+    <div id="songPlayPause" onclick="playPause('song')"></div>
+    <div id="songStop" onclick="stopSong()"></div>
+    <div id="volumeMeter" onclick="setNewVolume(this,event)"></div>
+    <div id="songSlider" onclick="setSongPosition(this,event)"></div>
+  </div>
+  </p>
+
+  <p>
+  <div class="box">
+    <img src="coverhh.JPG" class="icon1">
+    Boyfriends
+  </div>
+  <div hidden>
+    <audio id="song" width="300" height="32" ontimeupdate="updateTime()" controls="controls">
+      <source src="hs10.mp3" type="audio/mp3" />
+    </audio>
+    <div id="songPlay" onclick="play('song')"></div>
+    <div id="songPause" onclick="pause()"></div>
+    <div id="songPlayPause" onclick="playPause('song')"></div>
+    <div id="songStop" onclick="stopSong()"></div>
+    <div id="volumeMeter" onclick="setNewVolume(this,event)"></div>
+    <div id="songSlider" onclick="setSongPosition(this,event)"></div>
+  </div>
+  </p>
+
+  <p>
+  <div class="box">
+    <img src="coverhh.JPG" class="icon1">
+    Love Of My Life
+  </div>
+  <div hidden>
+    <audio id="song" width="300" height="32" ontimeupdate="updateTime()" controls="controls">
+      <source src="hs10.mp3" type="audio/mp3" />
+    </audio>
+    <div id="songPlay" onclick="play('song')"></div>
+    <div id="songPause" onclick="pause()"></div>
+    <div id="songPlayPause" onclick="playPause('song')"></div>
+    <div id="songStop" onclick="stopSong()"></div>
+    <div id="volumeMeter" onclick="setNewVolume(this,event)"></div>
+    <div id="songSlider" onclick="setSongPosition(this,event)"></div>
+  </div>
+  </p>
+
+
+  <footer class="footer">
+    <div class="center">
+      <a href="https://twitter.com/harry_styles"><img src="twitter.png" class="icon"></a>
+      <a href="https://ro-ro.facebook.com/harrystyles"><img src="facebook.png" class="icon"></a>
+      <a href="https://www.instagram.com/harrystyles/"><img src="instagram.png" class="icon"></a>
+      <a href="https://www.youtube.com/channel/UCZFWPqqPkFlNwIxcpsLOwew"><img src="youtube.png" class="icon"></a>
+    </div>
+    <img src="rainbow.JPG" class="rainbow">
+  </footer>
 
 
 </body>
+
 </html>

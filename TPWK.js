@@ -12,15 +12,15 @@ let editElement;
 let editFlag = false;
 let editID = "";
 
-message.addEventListener('keydown',e =>{
-    message.style.backgroundColor = "#bfb0f2";
-    message.style.color = "black";
+message.addEventListener('keydown', e => {
+  message.style.backgroundColor = "#bfb0f2";
+  message.style.color = "black";
 })
 
-message.addEventListener('keyup',e =>{
+message.addEventListener('keyup', e => {
 
-    message.style.backgroundColor = "hsl(210, 36%, 96%)";
-    message.style.color = "hsl(210, 22%, 49%)";
+  message.style.backgroundColor = "hsl(210, 36%, 96%)";
+  message.style.color = "hsl(210, 22%, 49%)";
 })
 
 form.addEventListener("submit", addItem);
@@ -49,27 +49,27 @@ function addItem(e) {
               </button>
             </div>
           `;
-  
+
     const deleteBtn = element.querySelector(".delete-btn");
     deleteBtn.addEventListener("click", deleteItem);
     const editBtn = element.querySelector(".edit-btn");
     editBtn.addEventListener("click", editItem);
 
-    
+
     list.appendChild(element);
-    
+
     displayAlert("message added", "success");
-    
+
     container.classList.add("show-container");
-    
+
     addToLocalStorage(id, value);
-    
+
     setBackToDefault();
   } else if (value !== "" && editFlag) {
     editElement.innerHTML = value;
     displayAlert("message changed", "success");
 
-   
+
     editLocalStorage(editID, value);
     setBackToDefault();
   } else {
@@ -123,11 +123,11 @@ function editItem(e) {
   const element = e.currentTarget.parentElement.parentElement;
 
   editElement = e.currentTarget.parentElement.previousElementSibling;
- 
+
   message.value = editElement.innerHTML;
   editFlag = true;
   editID = element.dataset.id;
- 
+
   submitBtn.textContent = "edit";
 }
 
@@ -202,7 +202,7 @@ function createListItem(id, value) {
               </button>
             </div>
           `;
-  
+
   const deleteBtn = element.querySelector(".delete-btn");
   deleteBtn.addEventListener("click", deleteItem);
   const editBtn = element.querySelector(".edit-btn");
