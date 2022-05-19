@@ -7,9 +7,7 @@ function play(id) {
 
   activeSong.play();
 
-  var percentageOfVolume = activeSong.volume / 1;
-  var percentageOfVolumeMeter = document.getElementById('volumeMeter').offsetWidth * percentageOfVolume;
-
+  
 
   document.getElementById('volumeStatus').style.width = Math.round(percentageOfVolumeSlider) + "px";
 }
@@ -51,7 +49,7 @@ function updateTime() {
 
 
   document.getElementById('trackProgress').style.width = Math.round(percentageOfSlider) + "px";
-  document.getElementById('trackProgress').style.backgroundColor = "red";
+
 }
 
 
