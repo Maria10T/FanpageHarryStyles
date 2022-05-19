@@ -25,6 +25,9 @@ function validateEmail(email) {
 	return re.test(String(email).toLowerCase());
 }
 
-
+inputs.forEach(input => {
+    input.value = '';
+  });
+});
 
 
